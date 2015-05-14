@@ -18,6 +18,10 @@
 
 <body>
 
+<audio id="audio1" src="sound/bass.wav"></audio>
+<audio id="audio2" src="sound/snare.wav"></audio>
+<audio id="audio3" src="sound/hi-hat.wav"></audio>
+
 <h1 class="heading">fm-tra.in</h1>
 
 <h2 class="note">fm-tra.in works best on browser</h2>
@@ -27,23 +31,35 @@
 <img class="back" src="img/b.png">
 	
 
-	<img class="posi1" src="img/S_O.png" id="seat0">
-	<img class="posi2" src="img/S_O.png" id="seat1">
-	<img class="posi3" src="img/S_O.png" id="seat2">
-	<img class="posi4" src="img/S_O.png" id="seat3">
-	<img class="posi5" src="img/S_O.png" id="seat4">
-	<img class="posi6" src="img/S_O.png" id="seat5">
-	<img class="posi7" src="img/S_O.png" id="seat6">
-	<img class="posi8" src="img/S_O.png" id="seat7">
+	<img onClick="play()" class="posi1" src="img/S_O.png" id="seat0">
+	<img onClick="play()" class="posi2" src="img/S_O.png" id="seat1">
+	<img onClick="play()" class="posi3" src="img/S_O.png" id="seat2">
+	<img onClick="play()" class="posi4" src="img/S_O.png" id="seat3">
+	<img onClick="play()" class="posi5" src="img/S_O.png" id="seat4">
+	<img onClick="play()" class="posi6" src="img/S_O.png" id="seat5">
+	<img onClick="play()" class="posi7" src="img/S_O.png" id="seat6">
+	<img onClick="play()" class="posi8" src="img/S_O.png" id="seat7">
 
 </div>	
 
+
 <script type="text/javascript">
+
+function play() {
+    var audio = document.getElementById('audio1');
+    if (audio.paused) {
+        audio.play();
+    }else{
+        audio.pause();
+        audio.currentTime = 0
+    }
+}
+
 
 var images = ['S_O.png'.src="img/S_O.png", 'S_P.png'.src="img/S_P.png", 'S_T.png'.src="img/S_T.png"],
 i = 1;
 
-var sounds = ['bass'.src="sound/bass.wav", 'snare'.src="sound/snare.wav", 'hi-hat'.src="sound/hi-hat.wav"],
+var audio = ['bass'.src="sound/bass.wav", 'snare'.src="sound/snare.wav", 'hi-hat'.src="sound/hi-hat.wav"],
 i = 1;
 
 
@@ -108,6 +124,7 @@ this.src = images[i >= images.length - 1 ? i = 0 : ++i];
 // snd.play();
 
 </script>
+
 
 </body>
 
