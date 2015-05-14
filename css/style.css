@@ -8,6 +8,12 @@
 	padding-top: 1%;
 }
 
+.heading {
+	position: absolute; top: 20px; left: 40px;
+	display:inline-block;
+	font-family: helvetica;
+}
+
 .posi1 {
 	position: absolute; top: 400px; left: 0px;
 	display:inline-block;
@@ -56,4 +62,54 @@
 	max-width: 12.2%;
 }
 
-/*use z scales in css to put boxes behind the background pic*/
+.note {
+	display:none;
+}
+
+@media (max-device-width: 480px) {
+
+.back {
+	display: none;
+}
+
+.heading {
+	display: none;
+}
+
+.posi1 {
+	display: none;
+}
+
+.posi2 {
+	display: none;}
+
+.posi3 {
+	display: none;
+}
+
+.posi4 {
+	display: none;
+}
+
+.posi5 {
+	display: none;
+}
+
+.posi6 {
+	display: none;
+}
+
+.posi7 {
+	display: none;
+}
+
+.posi8 {
+	display: none;
+}
+
+.note {
+    font-family: helvetica;
+  }
+}
+
+
