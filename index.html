@@ -69,20 +69,13 @@ for (var im=images.length; im--;) {
     img.src = images[im];
 }
 
-// for (var s=sounds.length; s--;) {
-//     var fuckjoe = new Sound();
-//     fuckjoe.src = sounds[s];
-// }
+
 
 // event handler 0
 document.getElementById('seat0').addEventListener('click', function() {
 this.src = images[i >= images.length - 1 ? i = 0 : ++i];
 }, false);
  	
-
-// document.getElementById('seat0').addEventListener('click', function() {
-// this.src = sounds[i >= sounds.length - 1 ? i = 0 : ++i];
-// }, false);
 
 // event handler 1
 document.getElementById('seat1').addEventListener('click', function() {
@@ -119,9 +112,6 @@ document.getElementById('seat7').addEventListener('click', function() {
 this.src = images[i >= images.length - 1 ? i = 0 : ++i];
 }, false);
 
-// audio
-// var snd = new Audio("bass.wav"); // buffers automatically when created
-// snd.play();
 
 </script>
 
